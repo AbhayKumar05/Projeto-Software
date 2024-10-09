@@ -1,10 +1,10 @@
 <?php
  include 'config.php';
- session_start();
+ session_start();/*
  $user_id = $_SESSION['user_id'];
  if(!isset($user_id)){
     header('location:login.php');
-   }
+   }*/
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
  <section class="placed-orders">
     <h1 class="title">Pedidos Feitos</h1>
     <div class="box-container">
-       <?php
+       <?php /*
           $order_query = mysqli_query($conn, "SELECT * FROM `orders` WHERE user_id = '$user_id'") or die('query failed');
           if(mysqli_num_rows($order_query) > 0){
              while($fetch_orders = mysqli_fetch_assoc($order_query)){
@@ -46,7 +46,7 @@
                }
            }else{
              echo '<p class="empty">Sem pedidos ainda!</p>';
-            }
+            } */
          ?>
      </div>
   </section>

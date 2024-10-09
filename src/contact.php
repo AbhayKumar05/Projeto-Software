@@ -1,10 +1,10 @@
 <?php
  include 'config.php';
- session_start();
+ session_start();/*
  $user_id = $_SESSION['user_id'];
  if(!isset($user_id)){
     header('location:login.php');
-   }
+   }*/
  if(isset($_POST['send'])){
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);

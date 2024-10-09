@@ -1,10 +1,10 @@
 <?php
  include 'config.php';
- session_start();
+ session_start();/*
  $user_id = $_SESSION['user_id'];
  if(!isset($user_id)){
     header('location:login.php');
-  }
+  }*/
  if(isset($_POST['add_to_cart'])){
    $product_name = $_POST['product_name'];
    $product_price = $_POST['product_price'];
@@ -39,7 +39,7 @@
  <section class="products">
     <h1 class="title">Ultimos Lançamentos</h1>
     <div class="box-container">
-       <?php  
+       <?php  /*
           $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
           if(mysqli_num_rows($select_products) > 0){
              while($fetch_products = mysqli_fetch_assoc($select_products)){
@@ -58,7 +58,7 @@
           }
           }else{
              echo '<p class="empty">Sem produtos no momento!</p>';
-            }
+            } */
         ?>
      </div>
   </section>

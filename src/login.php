@@ -1,27 +1,40 @@
 <?php
- include 'config.php';
- session_start();
- if(isset($_POST['submit'])){
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $pass = mysqli_real_escape_string($conn, md5($_POST['password']));
-    $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email' AND password = '$pass'") or die('query failed');
-    if(mysqli_num_rows($select_users) > 0){
-       $row = mysqli_fetch_assoc($select_users);
-       if($row['user_type'] == 'admin'){
-          $_SESSION['admin_name'] = $row['name'];
-          $_SESSION['admin_email'] = $row['email'];
-          $_SESSION['admin_id'] = $row['id'];
-          header('location:admin_page.php');
-        }elseif($row['user_type'] == 'user'){
-          $_SESSION['user_name'] = $row['name'];
-          $_SESSION['user_email'] = $row['email'];
-          $_SESSION['user_id'] = $row['id'];
-          header('location:index.php');
-         }
-      }else{
-       $message[] = 'incorrect email or password!';
-      }
-   }
+include 'config.php';
+session_start();
+
+if (isset($_POST['submit'])) {
+    // Usamos pg_escape_string para escapar os dados antes de usá-los na query
+    $email = pg_escape_string( $_POST['email']);
+    $pass = pg_escape_string(md5($_POST['password']));
+
+    // Query adaptada para PostgreSQL
+    $select_users = pg_query($conn, "SELECT * FROM users WHERE email = '$email' AND password = '$pass'");
+
+    if (!$select_users) {
+        die('Query failed: ' . pg_last_error());
+    }
+
+    // Usamos pg_num_rows para contar os resultados
+    if (pg_num_rows($select_users) > 0) {
+        // Obter o resultado usando pg_fetch_assoc
+        $row = pg_fetch_assoc($select_users);
+
+        // Verificar o tipo de usuário e definir as sessões
+        if ($row['user_type'] == 'admin') {
+            $_SESSION['admin_name'] = $row['name'];
+            $_SESSION['admin_email'] = $row['email'];
+            $_SESSION['admin_id'] = $row['id'];
+            header('Location: admin_page.php');
+        } elseif ($row['user_type'] == 'user') {
+            $_SESSION['user_name'] = $row['name'];
+            $_SESSION['user_email'] = $row['email'];
+            $_SESSION['user_id'] = $row['id'];
+            header('Location: index.php');
+        }
+    } else {
+        $message[] = 'Incorrect email or password!';
+    }
+}
 ?>
 
 <!DOCTYPE html>

@@ -1,10 +1,10 @@
 <?php
  include 'config.php';
- session_start();
+ session_start();/*
  $user_id = $_SESSION['user_id'];
  if(!isset($user_id)){
     header('location:login.php');
-  }
+  }*/
  if(isset($_POST['order_btn'])){
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $number = $_POST['number'];
@@ -57,7 +57,7 @@
 
  <section class="display-order">
     <?php  
-       $grand_total = 0;
+       $grand_total = 0; /*
        $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
        if(mysqli_num_rows($select_cart) > 0){
           while($fetch_cart = mysqli_fetch_assoc($select_cart)){
@@ -69,7 +69,7 @@
             }
         }else{
           echo '<p class="empty">your cart is empty</p>';
-         }
+         } */
       ?>
      <div class="grand-total"> grand total : <span>$<?php echo $grand_total; ?>/-</span> </div>
   </section>
@@ -101,27 +101,27 @@
           </div>
           <div class="inputBox">
              <span>Morada :</span>
-             <input type="number" min="0" name="flat" required placeholder="e.g. flat no.">
+             <input type="number" min="0" name="flat" required placeholder="flat nº">
           </div>
           <div class="inputBox">
              <span>Endereço :</span>
-             <input type="text" name="street" required placeholder="e.g. street name">
+             <input type="text" name="street" required placeholder="street name">
           </div>
           <div class="inputBox">
              <span>Cidade :</span>
-             <input type="text" name="city" required placeholder="e.g. mumbai">
+             <input type="text" name="city" required placeholder="Lisboa">
           </div>
           <div class="inputBox">
              <span>Distrito :</span>
-             <input type="text" name="state" required placeholder="e.g. maharashtra">
+             <input type="text" name="state" required placeholder="Lisboa">
           </div>
           <div class="inputBox">
              <span>País :</span>
-             <input type="text" name="country" required placeholder="e.g. india">
+             <input type="text" name="country" required placeholder="Portugal">
           </div>
           <div class="inputBox">
              <span>Codigo Postal :</span>
-             <input type="number" min="0" name="pin_code" required placeholder="e.g. 123456">
+             <input type="number" min="0" name="pin_code" required placeholder="123456">
           </div>
         </div>
         <input type="submit" value="order now" class="btn" name="order_btn">
