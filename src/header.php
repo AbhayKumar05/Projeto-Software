@@ -12,7 +12,7 @@ if(isset($message)){
 ?>
 
 <header class="header">
-   <div class="header-1">
+   <!--<div class="header-1">
       <div class="flex">
          <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
@@ -22,7 +22,7 @@ if(isset($message)){
          </div>
          <p> Novo <a href="login.php">Login</a> | <a href="register.php">Registro</a> </p>
       </div>
-   </div>
+   </div>-->
    <div class="header-2">
       <div class="flex">
          <div class="logo">
@@ -30,11 +30,9 @@ if(isset($message)){
          </div>
          <nav class="navbar">
             <a href="home.php">Home</a>
-            <a href="index.php">Blog</a>
-            <a href="about.php">About Us</a>
             <a href="shop.php">Shop</a>
-            <a href="contact.php">Contacto</a>
             <a href="orders.php">Pedidos</a>
+            <a href="contact.php">Contacto</a>
          </nav>
          <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>

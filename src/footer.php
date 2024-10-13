@@ -13,5 +13,17 @@
          <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
          <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
       </div>
+      <div class="box">
+         <h3>Links</h3>
+         <a href="index.php">Blog </a>
+         <a href="about.php">About us </a>
+         <a href="contact.php">Contacto </a>
+      </div>
+
    </div>
+   <hr>
+   <div class="copyright">
+      <p>© Ventorim's Book 2025. Todos os direitos reservados.</p>
+   </div>
+
 </section>

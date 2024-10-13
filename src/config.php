@@ -3,9 +3,10 @@
 
 // Configurações do PostgreSQL
 $host = "localhost";
-$dbname = "shop_db"; // o nome do banco de dados que você criou
-$user = "postgres";  // seu usuário PostgreSQL
-$password = "root";
+$dbname = "shop_db";
+$user = "postgres";  // The postgres role you're using
+$password = "root";  // The password you set
+
 
 // Criar a conexão
 $connection = pg_connect("host=$host dbname=$dbname user=$user password=$password");

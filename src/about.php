@@ -46,7 +46,8 @@ if(!isset($user_id)){
    </div>
 </section>
 
-<section class="reviews">
+
+<!--<section class="reviews">
    <h1 class="title">Avaliações</h1>
    <div class="box-container">
 
@@ -141,78 +142,138 @@ if(!isset($user_id)){
          <h3>Fernanda Camargo</h3>
       </div>
    </div>
+</section>-->
+
+
+
+
+<!--------  FAQs   ------->
+<section class="faq">
+   <div class="faq-container">
+      
+      <div class="faq-left">
+         <h1>Tem dúvidas?</h1>
+         <h2>Nós temos a resposta!</h2>
+         <p class="small-text">Se tiver mais perguntas, não hesite em contactar-nos ou entre em contacto diretamente com os desenvolvedores.</p>
+      </div>
+
+      
+      <div class="faq-right">
+         <div class="faq-item">
+            <div class="faq-question">
+               <span>Como posso pesquisar por um livro específico?</span>
+               <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+               <p>Pode utilizar a barra de pesquisa no topo da página ou aplicar filtros, como o género, preço ou autor, para encontrar o livro que procura.</p>
+            </div>
+         </div>
+         
+         <div class="faq-item">
+            <div class="faq-question">
+               <span>É seguro fazer pagamentos no site?</span>
+               <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+               <p>Sim, utilizamos criptografia TLS/SSL para garantir que todas as transações são seguras. Além disso, todos os dados sensíveis são armazenados de forma segura.</p>
+            </div>
+         </div>
+
+         <div class="faq-item">
+            <div class="faq-question">
+               <span>Como posso alterar ou cancelar uma encomenda?</span>
+               <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+               <p>Pode alterar ou cancelar uma encomenda acedendo à sua conta, na secção "Minhas Encomendas". Se precisar de assistência, contacte o nosso suporte.</p>
+            </div>
+         </div>
+
+         <div class="faq-item">
+            <div class="faq-question">
+               <span>Que métodos de pagamento estão disponíveis?</span>
+               <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+               <p>Aceitamos vários métodos de pagamento, incluindo cartões de crédito, débito, e opções como PayPal e MB Way.</p>
+            </div>
+         </div>
+
+         <div class="faq-item">
+            <div class="faq-question">
+               <span>Como recebo recomendações personalizadas de livros?</span>
+               <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+               <p>O nosso sistema de recomendações utiliza as suas preferências e histórico de compras para sugerir livros que possam ser do seu interesse.</p>
+            </div>
+         </div>
+
+         <div class="faq-item">
+            <div class="faq-question">
+               <span>Os meus dados pessoais estão protegidos?</span>
+               <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+               <p>Sim, seguimos as melhores práticas de segurança, incluindo a utilização de criptografia e autenticação multifator (MFA) para proteger os seus dados.</p>
+            </div>
+         </div>
+
+         <div class="faq-item">
+            <div class="faq-question">
+               <span>Como funciona o sistema de inventário da livraria?</span>
+               <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+               <p>O nosso sistema de inventário é gerido por administradores e é atualizado regularmente. Produtos esgotados serão indicados como indisponíveis na página do livro.</p>
+            </div>
+         </div>
+
+         <div class="faq-item">
+            <div class="faq-question">
+               <span>Como posso contactar o suporte ao cliente?</span>
+               <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+               <p>Pode contactar o nosso suporte ao cliente através da página de contacto, onde encontrará um formulário ou o nosso endereço de e-mail.</p>
+            </div>
+         </div>
+      </div>
+   </div>
 </section>
+
 
 <section class="authors">
 
-   <h1 class="title">Autores</h1>
+   <h1 class="title">Developers</h1>
 
    <div class="box-container">
 
       <div class="box">
          <img src="images/colleenhouck.jpg" alt="">
          <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
-         </div>
-         <h3>Colleen Houck</h3>
+            <a href="#" class="fab fa-instagram"></a>
+       </div>
+         <h3>Abhay Kumar</h3>
       </div>
 
       <div class="box">
          <img src="images/George_R._R._Martin.jpg" alt="">
          <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-instagram"></a>
          </div>
-         <h3>George R. R. Martin</h3>
+         <h3>Isis Venturin de Oliveira</h3>
       </div>
 
       <div class="box">
          <img src="images/jonhgreen.jpg" alt="">
          <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
-         </div>
-         <h3>Jonh Green</h3>
-      </div>
-
-      <div class="box">
-         <img src="images/Phil-Stamper.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
          </div>
-         <h3>Phil Stamper</h3>
-      </div>
-
-      <div class="box">
-         <img src="images/anahuang.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-         </div>
-         <h3>Ana Huang</h3>
-      </div>
-
-      <div class="box">
-         <img src="images/TessaBailey.webp" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-         </div>
-         <h3>Tessa Bailey</h3>
+         <h3>Nayuka Jasmin Malebo</h3>
       </div>
 
    </div>
@@ -222,6 +283,8 @@ if(!isset($user_id)){
 <?php include 'footer.php'; ?>
 
 <script src="js/script.js"></script>
+<script src="js/faq.js"></script>
+
 
 </body>
 </html>
