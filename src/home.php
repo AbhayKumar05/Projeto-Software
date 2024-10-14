@@ -147,7 +147,7 @@
             <h1 class="cormorant-garamond-bold">Sobre Nós</h1>  
           <p>Nossa livraria é um oásis para todos os amantes da leitura, um lugar onde cada livro é uma porta para novos horizontes. 
             Buscamos sempre proporcinar a melhor experiencia para nossos leitores.</p>
-          <a href="about.php" class="btn">Veja Mais</a>
+          <a href="about.php" class="white-btn">Veja Mais</a>
        </div>
     </div> 
  </section>

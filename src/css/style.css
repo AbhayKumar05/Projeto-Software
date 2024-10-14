@@ -110,15 +110,20 @@ section{
    text-transform: capitalize;
 }
 
-.btn:hover,
+
 .option-btn:hover,
 .delete-btn:hover{
    background-color: var(--black);
 }
 
-.white-btn,
+.white-btn{
+   background-color: #001d34;
+   border-radius: 1rem;
+}
 .btn{
-   background-color: var(--purple);
+   background-color: #001d34;
+   border-radius: 1rem;
+   width: 60%;
 }
 
 .option-btn{
@@ -129,10 +134,6 @@ section{
    background-color: var(--red);
 }
 
-.white-btn:hover{
-   background-color: var(--black);
-   color:var(--white);
-}
 
 .heading{
    min-height: 30vh;
@@ -173,56 +174,84 @@ section{
    }
 }
 
-.form-container{
-   min-height: 100vh;
-   background-color: #DFD5C8;
+/* ------------REGISTER --- DONT USE 100%--------*/ 
+.register-page {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100vh;
+   padding: 2rem;
+   box-sizing: border-box;
+ }
+ 
+
+ .form-container {
+   width: 50%;
    display: flex;
    align-items: center;
    justify-content: center;
-   padding:2rem;
-}
+   background-color: var(--white);
+   padding: 2rem;
+ }
+ 
 
-.form-container form{
-   padding:2rem;
-   width: 50rem;
+ .form-container form {
+   padding: 2rem;
+   width: 100%;
+   max-width: 800px;
    border-radius: .5rem;
-   box-shadow: var(--box-shadow);
-   border:var(--border);
    background-color: var(--white);
    text-align: center;
-}
-
-.form-container form h3{
-   font-size: 3rem;
+ }
+ 
+ .form-container form h3 {
+   font-size: 2.5rem;
    margin-bottom: 1rem;
-   text-transform: uppercase;
-   color:var(--black);
-}
-
-.form-container form .box{
-   width: 100%;
+   color: var(--black);
+ }
+ 
+ .form-container form .box {
+   width: 90%;
    border-radius: .5rem;
-   background-color: var(--light-bg);
-   padding:1.2rem 1.4rem;
-   font-size: 1.8rem;
-   color:var(--black);
-   border:var(--border);
-   margin:1rem 0;
-}
+   background-color:#fafafa;
+   padding: 1.2rem;
+   font-size: 1.5rem;
+   color: var(--black);
+   border: 1px solid #ccc;
+   margin: 1rem 0;
+ }
+ 
 
-.form-container form p{
-   padding-top: 1.5rem;
-   font-size: 2rem;
-   color:var(--black);
-}
-
-.form-container form p a{
-   color:var(--purple);
-}
-
-.form-container form p a:hover{
+ #register_img {
+   display: flex; 
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+#reg_image {
+   width: auto;
+   border-radius: 2%;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+ .form-container form p {
+   padding-top: 2rem;
+   font-size: 1.6rem;
+   color: var(--black);
+ }
+ 
+ .form-container form p a {
+   color: var(--purple);
+ }
+ 
+ .form-container form p a:hover {
    text-decoration: underline;
-}
+ }
+ 
 
 /*cabeçalho*/
 
@@ -422,17 +451,17 @@ section{
    width: 95%;
    margin: 0 auto;
    display: flex;
-   flex-direction: column; /* Stack the cards vertically */
-   align-items: flex-start; /* Align the content to the left */
+   flex-direction: column; 
+   align-items: flex-start; 
 }
 
 .services .services_box .services_card {
    display: flex;
    align-items: center;
-   width: 100%; /* Make each card take the full width */
-   padding: 20px 0; /* Add some padding for spacing */
-   box-shadow: none; /* Remove shadow */
-   border-bottom: 1px solid #ccc; /* Optional: Add a border to separate cards */
+   width: 100%; 
+   padding: 20px 0;
+   box-shadow: none;
+   border-bottom: 1px solid #ccc; 
 }
 
 
@@ -1281,8 +1310,9 @@ services_card*/
 
 .cormorant-garamond-light {
    font-family: "Cormorant Garamond", serif;
-   font-weight: 300;
+   font-weight: 100;
    font-style: normal;
+   padding-bottom: 2rem;
  }
  
  .cormorant-garamond-regular {
@@ -1531,3 +1561,151 @@ services_card*/
    margin-top: 10px;
 }
  */
+
+
+
+
+
+
+/*---------------  REGISTER ------------*/
+.register-page {
+   display: flex;
+   width: 100%;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem;
+ }
+ 
+
+ .form-container {
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--white);
+   padding: 2rem;
+ }
+ 
+ /* Form styling */
+ .form-container form {
+   width: 100%;
+   text-align: center;
+ }
+ 
+ .form-container form h3.cormorant-garamond-bold {
+   font-size: 2.5rem;
+   margin-bottom: 0.5rem;
+   font-family: 'Cormorant Garamond', serif;
+   color: #333;
+ }
+ 
+ .form-container form h3.cormorant-garamond-light {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+   font-family: 'Cormorant Garamond', serif;
+   color: #555;
+ }
+ 
+#register_img {
+   position: relative;
+   width: 50%;
+ }
+ 
+ #reg_image {
+   width: auto;
+   height: 80%;
+   border-radius: 2%;
+   object-fit: cover;
+ }
+ 
+
+ .image-text-box {
+   position: absolute;
+   top: 85%;
+   left: 50%;
+   transform: translate(-50%, -20%);
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   padding: 2rem;
+   border-radius: 10px;
+   text-align: center;
+   width: 70%;
+ }
+ 
+ .image-text-box h3 {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   font-family: 'Cormorant Garamond', serif;
+ }
+ 
+ .image-text-box p {
+   font-size: 1.6rem;
+   font-family: 'Cormorant Garamond', serif;
+ }
+ 
+
+.login-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100vw;
+   background-image: url(../images/image.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+   margin: 0;
+   padding: 0;
+ }
+
+
+.form-wrapper {
+   background-color: rgba(255, 255, 255, 0.7); 
+   padding: 3rem;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 40%; 
+   text-align: center;
+}
+
+
+.form-wrapper form h3.cormorant-garamond-bold {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   font-family: 'Cormorant Garamond', serif;
+   color: #333;
+}
+
+.form-wrapper form h3.cormorant-garamond-light {
+   font-size: 1.2rem;
+   margin-bottom: 2rem;
+   font-family: 'Cormorant Garamond', serif;
+   color: #555;
+}
+
+.form-wrapper form .box {
+   width: 100%;
+   padding: 1rem;
+   margin: 1rem 0;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   border: 1px solid #ccc;
+}
+
+
+.form-wrapper form p {
+   font-size: 1.4rem;
+   padding-top: 2rem;
+}
+
+.form-wrapper form p a {
+   color: #333;
+   text-decoration: none;
+   padding-top: 2rem;
+}
+
+.form-wrapper form p a:hover {
+   text-decoration: underline;
+}
