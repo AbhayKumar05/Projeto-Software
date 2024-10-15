@@ -121,10 +121,12 @@
           </div>
           <div class="inputBox">
              <span>Codigo Postal :</span>
-             <input type="number" min="0" name="pin_code" required placeholder="123456">
+             <input type="number" min="0" name="pin_code" required placeholder="1234-567">
           </div>
         </div>
-        <input type="submit" value="order now" class="btn" name="order_btn">
+        <div class="btn-container">
+         <input type="submit" value="Order Now" class="btn" name="order_btn">
+        </div>
      </form>
  </section>
  <?php include 'footer.php'; ?>

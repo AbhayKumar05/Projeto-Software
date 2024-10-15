@@ -136,7 +136,7 @@
        <a href="shop.php" class="option-btn">Veja mais</a>
     </div>-->
  </section>
-
+<!--
  <section class="about">
     <div class="flex">
        <div class="image">
@@ -147,14 +147,14 @@
             <h1 class="cormorant-garamond-bold">Sobre Nós</h1>  
           <p>Nossa livraria é um oásis para todos os amantes da leitura, um lugar onde cada livro é uma porta para novos horizontes. 
             Buscamos sempre proporcinar a melhor experiencia para nossos leitores.</p>
-          <a href="about.php" class="btn">Veja Mais</a>
+          <a href="about.php" class="white-btn">Veja Mais</a>
        </div>
     </div> 
  </section>
-
+-->
  <section class="image-section">
    <div class="image-container first-image">
-      <img src="images/home_book2.png" alt="First Image">
+      <img src="images/home_book4.png" alt="First Image">
    </div>
    <div class="image-container second-image">
       <img src="images/home_book1.png" alt="Second Image">
@@ -184,7 +184,41 @@
         </section>
 </div>-->
 
- <section class="home-contact">
+
+ <section class="recommendations">
+   <h1 class="cormorant-garamond-bold">Recomendações com base em compras anteriores</h1>
+   <div class="flex-books">
+      <div class="book">
+         <img id="home_rec" src="images/home_book3.png" alt="Book 1">
+         <p>---TITLE--- 1</p>
+      </div>
+      <div class="book">
+         <img id="home_rec" src="images/home_book3.png" alt="Book 2">
+         <p>---TITLE--- 2</p>
+      </div>
+      <div class="book">
+         <img id="home_rec" src="images/home_book3.png" alt="Book 3">
+         <p>---TITLE--- 3</p>
+      </div>
+   </div>
+   
+   <div class="flex-books">
+      <div class="book">
+         <img id="home_rec" src="images/home_book3.png" alt="Book 4">
+         <p>---TITLE--- 4</p>
+      </div>
+      <div class="book">
+         <img id="home_rec" src="images/home_book3.png" alt="Book 5">
+         <p>---TITLE--- 5</p>
+      </div>
+      <div class="book">
+         <img id="home_rec" src="images/home_book3.png" alt="Book 6">
+         <p>---TITLE--- 6</p>
+      </div>
+   </div>
+</section>
+
+<section class="home-contact">
     <div class="content">
        <h1 class="cormorant-garamond-bold">Tem questões?</h1>
        <p>Junte-se a nós e faça parte de uma comunidade que vive e respira histórias!
@@ -192,6 +226,8 @@
        <a href="contact.php" class="white-btn">Entre em contacto</a>
     </div>
  </section>
+
+<!--------------------------------------------        Book Recomendation List here       ----------------------------------------------->
 
  <?php include 'footer.php'; ?>
 

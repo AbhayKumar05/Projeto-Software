@@ -110,15 +110,20 @@ section{
    text-transform: capitalize;
 }
 
-.btn:hover,
+
 .option-btn:hover,
 .delete-btn:hover{
    background-color: var(--black);
 }
 
-.white-btn,
+.white-btn{
+   background-color: #001d34;
+   border-radius: 1rem;
+}
 .btn{
-   background-color: var(--purple);
+   background-color: #001d34;
+   border-radius: 1rem;
+   width: 60%;
 }
 
 .option-btn{
@@ -129,10 +134,6 @@ section{
    background-color: var(--red);
 }
 
-.white-btn:hover{
-   background-color: var(--black);
-   color:var(--white);
-}
 
 .heading{
    min-height: 30vh;
@@ -173,56 +174,84 @@ section{
    }
 }
 
-.form-container{
-   min-height: 100vh;
-   background-color: #DFD5C8;
+/* ------------REGISTER --- DONT USE 100%--------*/ 
+.register-page {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100vh;
+   padding: 2rem;
+   box-sizing: border-box;
+ }
+ 
+
+ .form-container {
+   width: 50%;
    display: flex;
    align-items: center;
    justify-content: center;
-   padding:2rem;
-}
+   background-color: var(--white);
+   padding: 2rem;
+ }
+ 
 
-.form-container form{
-   padding:2rem;
-   width: 50rem;
+ .form-container form {
+   padding: 2rem;
+   width: 100%;
+   max-width: 800px;
    border-radius: .5rem;
-   box-shadow: var(--box-shadow);
-   border:var(--border);
    background-color: var(--white);
    text-align: center;
-}
-
-.form-container form h3{
-   font-size: 3rem;
+ }
+ 
+ .form-container form h3 {
+   font-size: 2.5rem;
    margin-bottom: 1rem;
-   text-transform: uppercase;
-   color:var(--black);
-}
-
-.form-container form .box{
-   width: 100%;
+   color: var(--black);
+ }
+ 
+ .form-container form .box {
+   width: 90%;
    border-radius: .5rem;
-   background-color: var(--light-bg);
-   padding:1.2rem 1.4rem;
-   font-size: 1.8rem;
-   color:var(--black);
-   border:var(--border);
-   margin:1rem 0;
-}
+   background-color:#fafafa;
+   padding: 1.2rem;
+   font-size: 1.5rem;
+   color: var(--black);
+   border: 1px solid #ccc;
+   margin: 1rem 0;
+ }
+ 
 
-.form-container form p{
-   padding-top: 1.5rem;
-   font-size: 2rem;
-   color:var(--black);
-}
-
-.form-container form p a{
-   color:var(--purple);
-}
-
-.form-container form p a:hover{
+ #register_img {
+   display: flex; 
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+#reg_image {
+   width: auto;
+   border-radius: 2%;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+ .form-container form p {
+   padding-top: 2rem;
+   font-size: 1.6rem;
+   color: var(--black);
+ }
+ 
+ .form-container form p a {
+   color: var(--purple);
+ }
+ 
+ .form-container form p a:hover {
    text-decoration: underline;
-}
+ }
+ 
 
 /*cabeçalho*/
 
@@ -284,7 +313,7 @@ section{
 .header .header-2 .flex .logo img{
    width: 100px;
     cursor: pointer;
-    margin: 0px 0;
+    margin: 0 0;
 }
 
 .header .header-2 .flex .navbar a{
@@ -422,17 +451,17 @@ section{
    width: 95%;
    margin: 0 auto;
    display: flex;
-   flex-direction: column; /* Stack the cards vertically */
-   align-items: flex-start; /* Align the content to the left */
+   flex-direction: column; 
+   align-items: flex-start; 
 }
 
 .services .services_box .services_card {
    display: flex;
    align-items: center;
-   width: 100%; /* Make each card take the full width */
-   padding: 20px 0; /* Add some padding for spacing */
-   box-shadow: none; /* Remove shadow */
-   border-bottom: 1px solid #ccc; /* Optional: Add a border to separate cards */
+   width: 100%; 
+   padding: 20px 0;
+   box-shadow: none;
+   border-bottom: 1px solid #ccc; 
 }
 
 
@@ -751,39 +780,101 @@ section{
 
 /*formulario de contacto*/
 
-.contact form{
-   margin:0 auto;
-   background-color: var(--light-bg);
-   border-radius: .5rem;
-   border:var(--border);
-   padding:2rem;
-   max-width: 50rem;
-   margin:0 auto;
+.contact-container {
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 2rem;
+   gap: 20px;  
+}
+
+
+.form-container {
+   flex: 1; 
+   min-width: 45%;  
+}
+
+
+.text-container {
+   flex: 1; 
+   min-width: 45%;  
+   background-color: #f9f9f9;
+   padding: 2rem;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: left;
+}
+
+
+.text-container h3 {
+   font-size: 2rem;
+   margin-bottom: 2rem;
+   color: #333;
+}
+
+
+.text-container p {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+   margin: 15px;
+   color: #555;
+}
+
+
+.text-container a {
+   color: #007BFF;
+   text-decoration: underline;
+}
+
+.text-container a:hover {
+   text-decoration: none;
+}
+
+
+.contact form {
+   padding: 2rem;
+   max-width: 100%;
    text-align: center;
 }
 
-.contact form h3{
+.contact form h3 {
    font-size: 2.5rem;
    text-transform: uppercase;
    margin-bottom: 1rem;
-   color:var(--black);
+   color: var(--black);
 }
 
-.contact form .box{
-   margin:1rem 0;
+.contact form .box {
+   margin: 1rem 0;
    width: 100%;
-   border:var(--border);
+   border: var(--border);
    background-color: var(--white);
-   padding:1.2rem 1.4rem;
+   padding: 1.2rem 1.4rem;
    font-size: 1.8rem;
-   color:var(--black);
-   border-radius: .5rem;
+   border-width: 0.1rem;
+   color: var(--black);
+   border-radius: 0.5rem;
 }
 
-.contact form textarea{
+.contact form textarea {
    height: 20rem;
    resize: none;
 }
+
+/* ------- responsive design--------- */
+@media screen and (max-width: 768px) {
+   .contact-container {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .form-container, .text-container {
+      min-width: 100%;  
+   }
+}
+
 
 /*carrinho de compra*/
 
@@ -878,6 +969,10 @@ section{
    color:var(--red);
 }
 
+.shopping-cart .cart-total .btn{
+   width: 20%;
+}
+
 .shopping-cart .cart-total .flex{
    display: flex;
    flex-wrap: wrap;
@@ -925,49 +1020,116 @@ section{
    color:var(--red);
 }
 
-/*checkout*/
-.checkout form{
+
+.checkout form {
    max-width: 1200px;
-   padding:2rem;
-   margin:0 auto;
-   border:var(--border);
-   background-color: var(--light-bg);
-   border-radius: .5rem;
+   padding: 3rem;
+   margin: 0 auto;
+   background-color: var(--white);
+   border-radius: 1rem;
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); 
+   transition: all 0.3s ease;
 }
 
-.checkout form h3{
+.checkout form h3 {
    text-align: center;
-   margin-bottom: 2rem;
-   color:var(--black);
+   margin-bottom: 2.5rem;
+   color: var(--black);
    text-transform: uppercase;
    font-size: 3rem;
+   font-weight: bold;
 }
 
-.checkout form .flex{
+.checkout form .flex {
    display: flex;
    flex-wrap: wrap;
-   gap:1.5rem;
+   gap: 2rem; 
 }
 
-.checkout form .flex .inputBox{
-   flex:1 1 40rem;
+.checkout form .flex .inputBox {
+   flex: 1 1 40rem;
+   position: relative;  
 }
 
-.checkout form .flex span{
-   font-size: 2rem;
-   color:var(--black);
+.checkout form .flex span {
+   font-size: 1.8rem;
+   color: var(--black);
+   font-weight: 500;
+   margin-bottom: 0.5rem;
+   display: block;
 }
+
 
 .checkout form .flex select,
-.checkout form .flex input{
-   border:var(--border);
+.checkout form .flex input {
    width: 100%;
-   border-radius: .5rem;
-   width: 100%;
-   background-color: var(--white);
-   padding:1.2rem 1.4rem;
+   background-color: #fafafa;
+   padding: 1.2rem 1.6rem;
    font-size: 1.8rem;
-   margin:1rem 0;
+   border-radius: 0.8rem;
+   transition: all 0.3s ease;
+   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);  
+}
+
+.checkout form .flex input:focus,
+.checkout form .flex select:focus {
+   border-color: #007BFF;  
+   background-color: #f5f9ff;
+   box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+   outline: none;
+}
+
+.checkout form .flex input:hover,
+.checkout form .flex select:hover {
+   border-color: #007BFF;
+}
+
+
+.checkout form .btn-container {
+   display: flex;
+   justify-content: center; 
+   margin-top: 2rem;
+}
+
+
+.checkout form .btn {
+   width: 20%;
+   padding: 1.4rem 0;
+   background-color: #032040;
+   color: #fff;
+   font-size: 2rem;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+   text-transform: uppercase;
+   border-radius: 0.8rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   border: none;
+   margin-top: 2rem;
+}
+
+
+@media (max-width: 768px) {
+   .checkout form .flex {
+      flex-direction: column;
+   }
+
+   .checkout form .flex .inputBox {
+      flex: 1 1 100%;
+   }
+}
+
+.checkout form .flex input[name="name"]::placeholder {
+   content: "\f007"; 
+}
+
+.checkout form .flex input[name="number"]::placeholder {
+   content: "\f095"; 
+}
+
+.checkout form .flex input[name="email"]::placeholder {
+   content: "\f0e0"; 
 }
 
 /*pedido*/
@@ -1014,15 +1176,16 @@ section{
 
 .search-form form .btn{
    margin-top: 0;
+   width: 20%;
 }
 
 .search-form form .box{
    width: 100%;
    padding:1.2rem 1.4rem;
-   border:var(--border);
+   box-shadow: 0 0 8px rgba(118, 129, 142, 0.2);
    font-size: 2rem;
    color:var(--black);
-   background-color: var(--light-bg);
+   background-color: #f8f8f8;
    border-radius: .5rem;
 }
 
@@ -1281,8 +1444,9 @@ services_card*/
 
 .cormorant-garamond-light {
    font-family: "Cormorant Garamond", serif;
-   font-weight: 300;
+   font-weight: 100;
    font-style: normal;
+   padding-bottom: 2rem;
  }
  
  .cormorant-garamond-regular {
@@ -1531,3 +1695,180 @@ services_card*/
    margin-top: 10px;
 }
  */
+
+
+
+
+
+
+/*---------------  REGISTER ------------*/
+.register-page {
+   display: flex;
+   width: 100%;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem;
+ }
+ 
+
+ .form-container {
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--white);
+   padding: 2rem;
+ }
+ 
+ /* Form styling */
+ .form-container form {
+   width: 100%;
+   text-align: center;
+ }
+ 
+ .form-container form h3.cormorant-garamond-bold {
+   font-size: 2.5rem;
+   margin-bottom: 0.5rem;
+   font-family: 'Cormorant Garamond', serif;
+   color: #333;
+ }
+ 
+ .form-container form h3.cormorant-garamond-light {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+   font-family: 'Cormorant Garamond', serif;
+   color: #555;
+ }
+ 
+#register_img {
+   position: relative;
+   width: 50%;
+ }
+ 
+ #reg_image {
+   width: auto;
+   height: 80%;
+   border-radius: 2%;
+   object-fit: cover;
+ }
+ 
+
+ .image-text-box {
+   position: absolute;
+   top: 85%;
+   left: 50%;
+   transform: translate(-50%, -20%);
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   padding: 2rem;
+   border-radius: 10px;
+   text-align: center;
+   width: 70%;
+ }
+ 
+ .image-text-box h3 {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   font-family: 'Cormorant Garamond', serif;
+ }
+ 
+ .image-text-box p {
+   font-size: 1.6rem;
+   font-family: 'Cormorant Garamond', serif;
+ }
+ 
+
+.login-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100vw;
+   background-image: url(../images/image.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+   margin: 0;
+   padding: 0;
+ }
+
+
+.form-wrapper {
+   background-color: rgba(255, 255, 255, 0.7); 
+   padding: 3rem;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 40%; 
+   text-align: center;
+}
+
+
+.form-wrapper form h3.cormorant-garamond-bold {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   font-family: 'Cormorant Garamond', serif;
+   color: #333;
+}
+
+.form-wrapper form h3.cormorant-garamond-light {
+   font-size: 1.2rem;
+   margin-bottom: 2rem;
+   font-family: 'Cormorant Garamond', serif;
+   color: #555;
+}
+
+.form-wrapper form .box {
+   width: 100%;
+   padding: 1rem;
+   margin: 1rem 0;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   border: 1px solid #ccc;
+}
+
+
+.form-wrapper form p {
+   font-size: 1.6rem;
+   padding-top: 2rem;
+}
+
+.form-wrapper form p a {
+   color: #333;
+   text-decoration: none;
+   padding-top: 2rem;
+}
+
+.form-wrapper form p a:hover {
+   text-decoration: underline;
+}
+
+.recommendations {
+   text-align: center;
+   padding: 20px;
+}
+
+.flex-books {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap; 
+   gap: 10px; 
+   margin-bottom: 20px;
+}
+
+.book {
+   width: 30%; 
+   text-align: center;
+}
+
+#home_rec {
+   width: 80px;  
+   height: auto;  
+   margin-bottom: 10px;
+}
+
+.book p {
+   font-size: 16px;
+   text-align: center;
+}

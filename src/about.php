@@ -40,9 +40,11 @@ if(!isset($user_id)){
             Explore nossas estantes virtuais, descubra clássicos intemporais, lançamentos emocionantes e joias literárias escondidas. </p>
             <p>Seja você um ávido leitor ou um curioso explorador de mundos literários, estamos ansiosos para guiá-lo nesta jornada única 
             através das letras e das emoções que somente os livros podem proporcionar. 
-            Bem-vindo ao nosso cantinho de descobertas literárias, onde cada página vira uma nova aventura!</p>
-         <a href="contact.php" class="btn">contact us</a>
+            Bem-vindo ao nosso cantinho de descobertas literárias, onde cada página vira uma nova aventura!
+         </p>
+         <a href="contact.php" class="white-btn">contact us</a>
       </div>
+
    </div>
 </section>
 

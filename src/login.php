@@ -60,14 +60,20 @@ if (isset($_POST['submit'])) {
          }
       }
    ?>
- <div class="form-container">
+<div class="login-container">
+  <!-- Form container for the login form -->
+  <div class="form-wrapper">
     <form action="" method="post">
-       <h3>Faça Login</h3>
-       <input type="email" name="email" placeholder="Insira seu Email" required class="box">
-       <input type="password" name="password" placeholder="Insira sua Password" required class="box">
-       <input type="submit" name="submit" value="Entre" class="btn">
-       <p>Não tem conta? <a href="register.php">Se registre</a></p>
+      <h3 class="cormorant-garamond-bold">Inicie Sessão</h3>
+      <h3 class="cormorant-garamond-light">Aceda à sua conta e continue a explorar o nosso universo literário.</h3>
+      <input type="email" name="email" placeholder="Insira seu Email" required class="box">
+      <input type="password" name="password" placeholder="Insira sua Password" required class="box">
+      <input type="submit" name="submit" value="Enviar" class="btn">
+      <p>Não tem conta? <a href="register.php">Se registre</a></p>
     </form>
   </div>
+</div>
+
+
 </body>
 </html>

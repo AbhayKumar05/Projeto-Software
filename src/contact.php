@@ -37,16 +37,33 @@
     <p> <a href="home.php">Home</a> / Contacto </p>
   </div>
 
- <section class="contact">
-    <form action="" method="post">
-       <h3>Mande Mensagem!</h3>
-       <input type="text" name="name" required placeholder="Insira seu Nome" class="box">
-       <input type="email" name="email" required placeholder="Insira seu Email" class="box">
-       <input type="number" name="number" required placeholder="Insira seu Numero" class="box">
-       <textarea name="message" class="box" placeholder="Mensagem" id="" cols="30" rows="10"></textarea>
-       <input type="submit" value="Envie" name="send" class="btn">
-    </form>
- </section>
+  <section class="contact">
+   <div class="contact-container">
+      <!-- Left side: Contact form -->
+      <div class="form-container">
+         <form action="" method="post">
+            <h3>Contacte-nos</h3>
+            <input type="text" name="name" required placeholder="Insira seu Nome" class="box">
+            <input type="email" name="email" required placeholder="Insira seu Email" class="box">
+            <input type="number" name="number" required placeholder="Insira seu Número" class="box">
+            <textarea name="message" class="box" placeholder="Mensagem" cols="30" rows="10"></textarea>
+            <input type="submit" value="Envie" name="send" class="btn">
+         </form>
+      </div>
+
+      
+      <div class="text-container">
+         <h3>Como podemos ajudar?</h3>
+         <p>Estamos sempre disponíveis para responder às suas dúvidas e prestar assistência no que for necessário. Sinta-se à vontade para nos contactar!</p>
+         <h3>Visite-nos</h3>
+         <p>Email: contacto@ventorimlivros.pt</p>
+         <p>Telefone: +351 210 123 456</p>
+         <h3>Perguntas Frequentes</h3>
+         <p>Veja a nossa secção de <a href="about.php">FAQ</a> para respostas rápidas a dúvidas comuns.</p>
+      </div>
+   </div>
+</section>
+
  <?php include 'footer.php'; ?>
  <script src="js/script.js"></script>
 </body>
